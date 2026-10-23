@@ -2897,7 +2897,7 @@
 		<Metadata name="CommonTemplate.ПустойМакетDOCX.Template" id="b9e93e8f-1d4b-4bbb-ac1b-c8d26cfd1da2.0" configVersion="a74c6526cc249f49b75da080182161bd00000000"/>
 		<Metadata name="CommonTemplate.СтруктураПодчиненности" id="7a62d031-c340-4b1e-90af-fff697a2e979" configVersion="38a16d63d02996488484ea461656212200000000"/>
 		<Metadata name="CommonTemplate.СтруктураПодчиненности.Template" id="7a62d031-c340-4b1e-90af-fff697a2e979.0" configVersion="171f98a8422f9a458c61384d0e01637b00000000"/>
-		<Metadata name="Configuration.CRM_Языковой_Школы" id="302127cf-cb8f-49d2-926c-e0ff21125b83" configVersion="91f37f3af2e51a45a0c03205af68e27100000000"/>
+		<Metadata name="Configuration.CRM_Языковой_Школы" id="302127cf-cb8f-49d2-926c-e0ff21125b83" configVersion="e129e68b0636e7468fbba0c3a687039600000000"/>
 		<Metadata name="Configuration.CRM_Языковой_Школы.ExternalConnectionModule" id="e5e9bfac-38df-4f3b-8419-b3434daa9be2.5" configVersion="1d118cc275972f43b4ce379d18dc5cb400000000"/>
 		<Metadata name="Configuration.CRM_Языковой_Школы.ManagedApplicationModule" id="e5e9bfac-38df-4f3b-8419-b3434daa9be2.6" configVersion="ff640ef9bfcad14b892624d58e8df28d00000000"/>
 		<Metadata name="Configuration.CRM_Языковой_Школы.OrdinaryApplicationModule" id="e5e9bfac-38df-4f3b-8419-b3434daa9be2.0" configVersion="b4f5398d424bbb4d9342ffcc3636b51a00000000"/>
@@ -3929,6 +3929,19 @@
 			<Metadata name="Enum.СтатусыОбработчиковОбновления.EnumValue.НеВыполнялся" id="f37b7b25-abd2-4e19-9712-78aafceb4f43"/>
 		</Metadata>
 		<Metadata name="Enum.СтатусыОбработчиковОбновления.ManagerModule" id="36b15776-5211-4afa-9b6c-c042121218c0.0" configVersion="acda6cecbdccae40bfa8fad5e2e4b20700000000"/>
+		<Metadata name="Enum.СтатусыПосещения" id="c4b81128-135a-4df6-908e-5dda51c87f1b" configVersion="794705c0fc52ce4894d7861b7df028e100000000">
+			<Metadata name="Enum.СтатусыПосещения.EnumValue.Отсутствовал" id="5fefdb8c-0510-49b7-93fa-196f9b78b21b"/>
+			<Metadata name="Enum.СтатусыПосещения.EnumValue.Отработан" id="c4c0840d-c6ec-4bbd-a2de-e6b2d108c99e"/>
+			<Metadata name="Enum.СтатусыПосещения.EnumValue.ПоСправке" id="ca3e60ee-c9c8-4f1d-8a80-25c007d366bf"/>
+			<Metadata name="Enum.СтатусыПосещения.EnumValue.Присутствовал" id="dd59af81-9f92-4520-9104-fe35e16d6562"/>
+			<Metadata name="Enum.СтатусыПосещения.EnumValue.НеОтмечено" id="eaf42daf-8a06-4e71-817b-9c8feee449e2"/>
+		</Metadata>
+		<Metadata name="Enum.СтатусыУченика" id="f6f50e86-fa44-40a2-8582-ccc7491036b5" configVersion="497107d64b0a164b90a76228fc2e224700000000">
+			<Metadata name="Enum.СтатусыУченика.EnumValue.Потенциальный" id="3245048e-8c9e-4c56-8a4c-83c0336f8928"/>
+			<Metadata name="Enum.СтатусыУченика.EnumValue.Активный" id="6f34c0e8-e301-4742-9c60-fe253ada1f82"/>
+			<Metadata name="Enum.СтатусыУченика.EnumValue.ВременноПриостановил" id="a69d4520-9740-4beb-8a6e-ae78389526bb"/>
+			<Metadata name="Enum.СтатусыУченика.EnumValue.ПрекратилОбучение" id="fdc4a3a7-60b6-401a-b1ba-b534cc8dcb0b"/>
+		</Metadata>
 		<Metadata name="Enum.СтатусыЭлектронныхПисем" id="da031ebd-4aba-40e6-acb9-245cf73c4423" configVersion="cafdb9955ef02d4393dc234e430ea88400000000">
 			<Metadata name="Enum.СтатусыЭлектронныхПисем.EnumValue.НеДоставлено" id="59d47246-e522-4baa-96b3-d7e93279e3ec"/>
 			<Metadata name="Enum.СтатусыЭлектронныхПисем.EnumValue.Доставлено" id="c222b2c0-5e92-4022-b2f7-49967b5a9de3"/>
@@ -3952,6 +3965,10 @@
 			<Metadata name="Enum.ТипыОтчетов.EnumValue.Дополнительный" id="9b149c20-9328-4e2d-a34b-95c883ae4dcc"/>
 			<Metadata name="Enum.ТипыОтчетов.EnumValue.Расширение" id="dd6fdc0d-49bb-4fa1-aa17-bd9dc38a0992"/>
 			<Metadata name="Enum.ТипыОтчетов.EnumValue.Внешний" id="f8dbf226-ea56-4b15-baf1-a41fceba2a32"/>
+		</Metadata>
+		<Metadata name="Enum.ТипыСкидок" id="b39e07de-5ddd-4d0f-89a3-3be83ceb0598" configVersion="2d2237f1ffb14243ae04c1f5cad665e800000000">
+			<Metadata name="Enum.ТипыСкидок.EnumValue.Процент" id="0dc1831c-d2d7-42ee-8f5d-850c31fbe763"/>
+			<Metadata name="Enum.ТипыСкидок.EnumValue.ФиксированнаяСумма" id="c3fbd868-5042-4ff0-9032-cf13fd490458"/>
 		</Metadata>
 		<Metadata name="Enum.ТипыТекстовЭлектронныхПисем" id="9d77103a-9921-4f6c-98fc-d7f42f0f2d8d" configVersion="abf4b5a13f633348b6c85b3bb9eeec4f00000000">
 			<Metadata name="Enum.ТипыТекстовЭлектронныхПисем.EnumValue.РазмеченныйТекст" id="3b207d5f-6584-4cf2-9173-20235484f9f4"/>
@@ -5467,6 +5484,7 @@
 		<Metadata name="StyleItem.ЦветФонаПредупреждения" id="b8c4aff0-a36d-4be9-9a5e-b0873d83ff15" configVersion="cba1d7e54cd36d44a169e05ff347c74600000000"/>
 		<Metadata name="Subsystem.Администрирование" id="9233322b-dfdb-4c66-91fe-1299292d40a5" configVersion="83d9539da4de90428826dd7ae0c0207300000000"/>
 		<Metadata name="Subsystem.Администрирование.CommandInterface" id="9233322b-dfdb-4c66-91fe-1299292d40a5.1" configVersion="9bcacc76fc9f034ba3bee8f216662bc100000000"/>
+		<Metadata name="Subsystem.НСИ" id="d6338f7c-b598-41cf-8202-9bc9d20056a1" configVersion="752927febb4e824dad238324f48031d400000000"/>
 		<Metadata name="Subsystem.ПодключаемыеОтчетыИОбработки" id="7795348b-2f52-47f7-bf00-e11e5e795a43" configVersion="1da5598eff4c9d42a485a9f42d1ef6e200000000"/>
 		<Metadata name="Subsystem.СтандартныеПодсистемы" id="0421b67e-ed26-491d-ab98-ec59002ed4ce" configVersion="166a0ab88a69074b8c05ad24d34fd21100000000"/>
 		<Metadata name="Subsystem.СтандартныеПодсистемы.Subsystem.АнализЖурналаРегистрации" id="7d8acec9-f5a9-411e-921c-446ed0dd3332" configVersion="c5b943075fdcb74e930331553429437500000000"/>
