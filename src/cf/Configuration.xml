@@ -1536,6 +1536,11 @@
 			<Catalog>ШаблоныСообщений</Catalog>
 			<Catalog>ШаблоныСообщенийПрисоединенныеФайлы</Catalog>
 			<Catalog>Контрагенты</Catalog>
+			<Catalog>Ученики</Catalog>
+			<Catalog>Направления</Catalog>
+			<Catalog>ВозрастныеГруппы</Catalog>
+			<Catalog>Группы</Catalog>
+			<Catalog>ФизическиеЛица</Catalog>
 			<Enum>ВариантыВажностиЗадачи</Enum>
 			<Enum>ВариантыПредставленияПериода</Enum>
 			<Enum>ВариантыПериода</Enum>
@@ -1585,6 +1590,8 @@
 			<Enum>СтатусыУченика</Enum>
 			<Enum>СтатусыПосещения</Enum>
 			<Enum>ТипыСкидок</Enum>
+			<Enum>УровниЗнанияЯзыка</Enum>
+			<Enum>ПолФизическогоЛица</Enum>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>АнализПравДоступа</Report>
 			<Report>БизнесПроцессы</Report>

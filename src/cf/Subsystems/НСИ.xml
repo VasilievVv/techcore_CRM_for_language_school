@@ -20,6 +20,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыПосещения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыСкидок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Ученики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Направления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВозрастныеГруппы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Группы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.УровниЗнанияЯзыка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФизическиеЛица</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПолФизическогоЛица</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
