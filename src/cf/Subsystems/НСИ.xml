@@ -19,6 +19,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыУченика</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыПосещения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыСкидок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -1,5 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="5b2e0c26-6b85-43f1-a167-003443246adb">
+		<Name>СправочникКонтрагенты</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Контрагенты"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="e8fa1f6d-7d59-476e-8288-31f570e7af3c">
+				<Name>ТелефонКонтрагента</Name>
+				<Code/>
+				<Description>Телефон</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="fff8c812-bfe5-4be5-af45-8a3d88837378">
+				<Name>EmailКонтрагента</Name>
+				<Code/>
+				<Description>Электронная почта</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
 	<Item id="8cbaa30d-faab-45ad-880e-84f8b421f448">
 		<Name>СправочникПользователи</Name>
 		<Code/>
