@@ -40,4 +40,16 @@
 			</Item>
 		</ChildItems>
 	</Item>
+	<Item id="ad32a71e-b615-4d14-8187-06ed73a81408">
+		<Name>СправочникУченики</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Ученики"</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="147b0054-8e44-40d0-9686-b14a6ea06596">
+		<Name>СправочникФизическиеЛица</Name>
+		<Code/>
+		<Description>Контактная информация справочника "Физические лица"</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
 </PredefinedData>

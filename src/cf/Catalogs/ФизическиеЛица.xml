@@ -313,7 +313,24 @@
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
 			</StandardAttributes>
-			<Characteristics/>
+			<Characteristics>
+				<xr:Characteristic>
+					<xr:CharacteristicTypes from="Catalog.ВидыКонтактнойИнформации">
+						<xr:KeyField>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Ref</xr:KeyField>
+						<xr:TypesFilterField>Catalog.ВидыКонтактнойИнформации.Attribute.ИмяГруппы</xr:TypesFilterField>
+						<xr:TypesFilterValue xsi:type="xs:string">СправочникФизическиеЛица</xr:TypesFilterValue>
+						<xr:DataPathField>-1</xr:DataPathField>
+						<xr:MultipleValuesUseField>-1</xr:MultipleValuesUseField>
+					</xr:CharacteristicTypes>
+					<xr:CharacteristicValues from="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация">
+						<xr:ObjectField>Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.StandardAttribute.Ref</xr:ObjectField>
+						<xr:TypeField>Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.Вид</xr:TypeField>
+						<xr:ValueField>Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.Представление</xr:ValueField>
+						<xr:MultipleValuesKeyField>-1</xr:MultipleValuesKeyField>
+						<xr:MultipleValuesOrderField>-1</xr:MultipleValuesOrderField>
+					</xr:CharacteristicValues>
+				</xr:Characteristic>
+			</Characteristics>
 			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
 			<EditType>BothWays</EditType>
 			<QuickChoice>false</QuickChoice>
@@ -327,7 +344,7 @@
 			<DefaultObjectForm>Catalog.ФизическиеЛица.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
 			<DefaultListForm>Catalog.ФизическиеЛица.Form.ФормаСписка</DefaultListForm>
-			<DefaultChoiceForm>Catalog.ФизическиеЛица.Form.ФормаСписка</DefaultChoiceForm>
+			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
@@ -930,15 +947,15 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<TabularSection uuid="e622bb07-f840-4702-8350-1a8d95703263">
+			<TabularSection uuid="e1e1b06d-376b-4d8b-9040-fa0e0dc7cbec">
 				<InternalInfo>
 					<xr:GeneratedType name="CatalogTabularSection.ФизическиеЛица.КонтактнаяИнформация" category="TabularSection">
-						<xr:TypeId>f1be6eb1-1506-4413-8bbe-377e03fcb1ca</xr:TypeId>
-						<xr:ValueId>38702ed0-8a53-4b89-b979-1de86f03c5ad</xr:ValueId>
+						<xr:TypeId>6b8e3838-40c0-4004-ae6f-cdecf7427c2b</xr:TypeId>
+						<xr:ValueId>90d61f77-9047-4330-a0a8-b68bcd0af1a5</xr:ValueId>
 					</xr:GeneratedType>
 					<xr:GeneratedType name="CatalogTabularSectionRow.ФизическиеЛица.КонтактнаяИнформация" category="TabularSectionRow">
-						<xr:TypeId>b03da921-781a-41e2-9323-0325a0b65c48</xr:TypeId>
-						<xr:ValueId>27cd2db4-9471-41c9-b645-62da58bd028e</xr:ValueId>
+						<xr:TypeId>dfcad0be-d699-4fab-94f0-eddfb6c6261d</xr:TypeId>
+						<xr:ValueId>4eb6a600-d9a2-44e8-a909-8e51b6cbe768</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -990,7 +1007,7 @@
 					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="a1b5d03f-189d-4cbf-b353-3e0b9796e7f7">
+					<Attribute uuid="92a5510a-4336-4004-9d7a-eb6148e5b1da">
 						<Properties>
 							<Name>Тип</Name>
 							<Synonym>
@@ -1032,7 +1049,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="9c42a256-d6c2-44a8-9b20-21ef69337475">
+					<Attribute uuid="fc006dce-fa71-4369-8017-dca08c349416">
 						<Properties>
 							<Name>Вид</Name>
 							<Synonym>
@@ -1074,7 +1091,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="c492c0b1-5eb5-4b04-bffa-dfe7ff8add16">
+					<Attribute uuid="9ecd1340-441a-4b9c-850f-dd72802c0f56">
 						<Properties>
 							<Name>Представление</Name>
 							<Synonym>
@@ -1120,7 +1137,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="3fb7d3a0-09a4-4ab1-827b-e2c115e4f688">
+					<Attribute uuid="45b84263-0584-46c6-be42-7f7d3320dbe7">
 						<Properties>
 							<Name>ЗначенияПолей</Name>
 							<Synonym>
@@ -1166,7 +1183,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="2b01edfd-949c-4347-8ab4-cb4370e5db68">
+					<Attribute uuid="d88843c7-1ad2-452a-9e9e-25cf559648c8">
 						<Properties>
 							<Name>Страна</Name>
 							<Synonym>
@@ -1212,7 +1229,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="919daa31-8422-4ce7-baa4-4247c7fe33d5">
+					<Attribute uuid="45cdf7a4-dc49-4e34-952e-995c17b082ea">
 						<Properties>
 							<Name>Регион</Name>
 							<Synonym>
@@ -1258,7 +1275,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="f96285c3-8d17-4336-bb6d-991661f85a6b">
+					<Attribute uuid="9f99523a-3c9e-40ea-9c36-74ee1615f88b">
 						<Properties>
 							<Name>Город</Name>
 							<Synonym>
@@ -1304,7 +1321,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="a776115b-f850-4ad8-8694-32c1f011d72d">
+					<Attribute uuid="ee9fb1c3-1888-4433-bddc-dc36f93b6fae">
 						<Properties>
 							<Name>АдресЭП</Name>
 							<Synonym>
@@ -1350,7 +1367,53 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="476b9263-4652-4d39-a5fe-7dfc07e68fb3">
+					<Attribute uuid="025d5730-c75f-48ca-9917-27f2e9698467">
+						<Properties>
+							<Name>ДоменноеИмяСервера</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доменное имя сервера</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>100</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доменное имя сервера электронной почты или веб-страницы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>DontUse</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="aac41946-ad73-404d-a5d0-74239ea3f9d4">
 						<Properties>
 							<Name>НомерТелефона</Name>
 							<Synonym>
@@ -1396,7 +1459,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="dac2191b-9e71-4a87-886f-72e73d886f05">
+					<Attribute uuid="47ff7e5a-923d-492a-bb90-b2f0a7d8b5e1">
 						<Properties>
 							<Name>НомерТелефонаБезКодов</Name>
 							<Synonym>
@@ -1442,7 +1505,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="644f8731-4065-41ca-9d15-4ca81dc43509">
+					<Attribute uuid="bff27285-34e7-4b74-8049-ecd0e9ca4e19">
 						<Properties>
 							<Name>Значение</Name>
 							<Synonym>
@@ -1490,7 +1553,6 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаГруппы</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаЭлемента</Form>
 			<Template>ДанныеПечати</Template>
