@@ -22,7 +22,7 @@
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 		</InputField>
 		<InputField name="РодительУченика" id="7">
-			<DataPath>Объект.РодительУченика</DataPath>
+			<DataPath>Объект.Плательщик</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="РодительУченикаКонтекстноеМеню" id="8"/>
