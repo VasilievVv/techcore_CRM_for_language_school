@@ -1308,6 +1308,7 @@
 			<DefinedType>ПрисоединенныйФайл</DefinedType>
 			<DefinedType>ПрисоединенныйФайлОбъект</DefinedType>
 			<DefinedType>ФизическоеЛицо</DefinedType>
+			<DefinedType>УчебныйГод</DefinedType>
 			<CommonCommand>ВремяТекущегоСеанса</CommonCommand>
 			<CommonCommand>ВсеФайлы</CommonCommand>
 			<CommonCommand>ЗадачиПоПредмету</CommonCommand>
@@ -1541,6 +1542,9 @@
 			<Catalog>ВозрастныеГруппы</Catalog>
 			<Catalog>Группы</Catalog>
 			<Catalog>ФизическиеЛица</Catalog>
+			<Catalog>Кабинеты</Catalog>
+			<Document>ДоговорОбучения</Document>
+			<Document>УстановкаЦен</Document>
 			<Enum>ВариантыВажностиЗадачи</Enum>
 			<Enum>ВариантыПредставленияПериода</Enum>
 			<Enum>ВариантыПериода</Enum>
@@ -1592,6 +1596,8 @@
 			<Enum>ТипыСкидок</Enum>
 			<Enum>УровниЗнанияЯзыка</Enum>
 			<Enum>ПолФизическогоЛица</Enum>
+			<Enum>ДниНедели</Enum>
+			<Enum>ФормыЗанятий</Enum>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>АнализПравДоступа</Report>
 			<Report>БизнесПроцессы</Report>
@@ -1717,6 +1723,7 @@
 			<InformationRegister>ФиксацияОбработкиДанныхОбработчиками</InformationRegister>
 			<InformationRegister>УдалитьЗамерыВремени3</InformationRegister>
 			<InformationRegister>УдалитьХранимыеФайлыВерсий</InformationRegister>
+			<InformationRegister>ЦеныОбучения</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ОбъектыАдресацииЗадач</ChartOfCharacteristicTypes>
 			<BusinessProcess>Задание</BusinessProcess>
