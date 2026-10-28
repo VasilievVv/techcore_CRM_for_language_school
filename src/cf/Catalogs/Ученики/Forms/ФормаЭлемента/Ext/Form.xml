@@ -7,55 +7,130 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Код" id="1">
-			<DataPath>Объект.Code</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
-		</InputField>
-		<InputField name="Наименование" id="4">
-			<DataPath>Объект.Description</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-		</InputField>
-		<InputField name="РодительУченика" id="7">
-			<DataPath>Объект.Плательщик</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="РодительУченикаКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="РодительУченикаРасширеннаяПодсказка" id="9"/>
-		</InputField>
-		<InputField name="ДатаРождения" id="10">
-			<DataPath>Объект.ДатаРождения</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="12"/>
-		</InputField>
-		<InputField name="Статус" id="13">
-			<DataPath>Объект.Статус</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="СтатусКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="15"/>
-		</InputField>
-		<InputField name="ВозрастнаяГруппа" id="16">
-			<DataPath>Объект.ВозрастнаяГруппа</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ВозрастнаяГруппаКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="ВозрастнаяГруппаРасширеннаяПодсказка" id="18"/>
-		</InputField>
-		<InputField name="ТекущаяГруппа" id="19">
-			<DataPath>Объект.ТекущаяГруппа</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ТекущаяГруппаКонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="ТекущаяГруппаРасширеннаяПодсказка" id="21"/>
-		</InputField>
+		<UsualGroup name="ГруппаОсновныеРеквизиты" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основные реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основные реквизиты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновныеРеквизитыРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОсновныеРеквизитыЛево" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные реквизиты лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные реквизиты лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОсновныеРеквизитыЛевоРасширеннаяПодсказка" id="27"/>
+					<ChildItems>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>47</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<UsualGroup name="ГруппаВозраст" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа возраст</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа возраст</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВозрастРасширеннаяПодсказка" id="29"/>
+							<ChildItems>
+								<InputField name="ДатаРождения" id="10">
+									<DataPath>Объект.ДатаРождения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="12"/>
+								</InputField>
+								<InputField name="ВозрастнаяГруппа" id="16">
+									<DataPath>Объект.ВозрастнаяГруппа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ВозрастнаяГруппаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ВозрастнаяГруппаРасширеннаяПодсказка" id="18"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ТекущаяГруппа" id="19">
+							<DataPath>Объект.ТекущаяГруппа</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>43</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТекущаяГруппаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ТекущаяГруппаРасширеннаяПодсказка" id="21"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОсновныеРеквизитыПраво" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные реквизиты право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные реквизиты право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОсновныеРеквизитыПравоРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<InputField name="Владелец" id="32">
+							<DataPath>Объект.Owner</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВладелецКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="Статус" id="13">
+							<DataPath>Объект.Статус</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="15"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаКонтактнаяИнформация" id="22">
 			<Title>
 				<v8:item>
@@ -64,7 +139,9 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
 			<ExtendedTooltip name="ГруппаКонтактнаяИнформацияРасширеннаяПодсказка" id="23"/>
 		</UsualGroup>
 	</ChildItems>

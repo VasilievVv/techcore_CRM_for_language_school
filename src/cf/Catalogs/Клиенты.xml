@@ -2,33 +2,33 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Catalog uuid="fbf0b476-15aa-40a7-8800-687ab02b6d64">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Контрагенты" category="Object">
+			<xr:GeneratedType name="CatalogObject.Клиенты" category="Object">
 				<xr:TypeId>9ff463a9-169e-4b61-bdeb-1c2a27f530d2</xr:TypeId>
 				<xr:ValueId>e7b0b56e-99f9-4d42-93a9-9e80dfb07138</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Контрагенты" category="Ref">
+			<xr:GeneratedType name="CatalogRef.Клиенты" category="Ref">
 				<xr:TypeId>440d2aa3-3a9c-4f66-944e-acb273129343</xr:TypeId>
 				<xr:ValueId>6292088f-5837-4de8-948e-7580c19a37e3</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Контрагенты" category="Selection">
+			<xr:GeneratedType name="CatalogSelection.Клиенты" category="Selection">
 				<xr:TypeId>9801874e-35eb-449e-a1c3-51bcc020d0e6</xr:TypeId>
 				<xr:ValueId>e7c6a1a8-3b77-4172-898d-a50bb6faa40c</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Контрагенты" category="List">
+			<xr:GeneratedType name="CatalogList.Клиенты" category="List">
 				<xr:TypeId>ac409e80-f54f-4ecc-a33d-a47ffb836824</xr:TypeId>
 				<xr:ValueId>3aeec628-03e7-4d14-bc84-ee158da5b72d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Контрагенты" category="Manager">
+			<xr:GeneratedType name="CatalogManager.Клиенты" category="Manager">
 				<xr:TypeId>42da5936-60b5-4a19-b99f-79030d78a13a</xr:TypeId>
 				<xr:ValueId>2de794bf-22e3-4272-9588-31aeffa9c2ad</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Контрагенты</Name>
+			<Name>Клиенты</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Контрагенты</v8:content>
+					<v8:content>Клиенты</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -307,10 +307,10 @@
 						<xr:DataPathField>-1</xr:DataPathField>
 						<xr:MultipleValuesUseField>-1</xr:MultipleValuesUseField>
 					</xr:CharacteristicTypes>
-					<xr:CharacteristicValues from="Catalog.Контрагенты.TabularSection.КонтактнаяИнформация">
-						<xr:ObjectField>Catalog.Контрагенты.TabularSection.КонтактнаяИнформация.StandardAttribute.Ref</xr:ObjectField>
-						<xr:TypeField>Catalog.Контрагенты.TabularSection.КонтактнаяИнформация.Attribute.Вид</xr:TypeField>
-						<xr:ValueField>Catalog.Контрагенты.TabularSection.КонтактнаяИнформация.Attribute.Представление</xr:ValueField>
+					<xr:CharacteristicValues from="Catalog.Клиенты.TabularSection.КонтактнаяИнформация">
+						<xr:ObjectField>Catalog.Клиенты.TabularSection.КонтактнаяИнформация.StandardAttribute.Ref</xr:ObjectField>
+						<xr:TypeField>Catalog.Клиенты.TabularSection.КонтактнаяИнформация.Attribute.Вид</xr:TypeField>
+						<xr:ValueField>Catalog.Клиенты.TabularSection.КонтактнаяИнформация.Attribute.Представление</xr:ValueField>
 						<xr:MultipleValuesKeyField>-1</xr:MultipleValuesKeyField>
 						<xr:MultipleValuesOrderField>-1</xr:MultipleValuesOrderField>
 					</xr:CharacteristicValues>
@@ -321,15 +321,15 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Контрагенты.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Контрагенты.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Клиенты.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Клиенты.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Catalog.Контрагенты.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultObjectForm>Catalog.Клиенты.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
-			<DefaultListForm>Catalog.Контрагенты.Form.ФормаСписка</DefaultListForm>
+			<DefaultListForm>Catalog.Клиенты.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -342,10 +342,25 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation/>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
-			<ListPresentation/>
-			<ExtendedListPresentation/>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиенты</v8:content>
+				</v8:item>
+			</ListPresentation>
+			<ExtendedListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список клиентов</v8:content>
+				</v8:item>
+			</ExtendedListPresentation>
 			<Explanation/>
 			<CreateOnInput>Use</CreateOnInput>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
@@ -354,13 +369,57 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="12f246cb-ca3f-4232-930b-c6dea54165b1">
+				<Properties>
+					<Name>Комментарий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>500</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>true</MultiLine>
+					<ExtendedEdit>true</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
 			<TabularSection uuid="e34fb0df-2ec5-4640-be8d-71dccb76f61f">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.Контрагенты.КонтактнаяИнформация" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.Клиенты.КонтактнаяИнформация" category="TabularSection">
 						<xr:TypeId>f660c007-dfee-4121-b638-88dbaf12dcdb</xr:TypeId>
 						<xr:ValueId>2f10b061-1ee5-430b-98b7-338965dc7593</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.Контрагенты.КонтактнаяИнформация" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.Клиенты.КонтактнаяИнформация" category="TabularSectionRow">
 						<xr:TypeId>938026e6-580e-43e4-997e-8be2527020fa</xr:TypeId>
 						<xr:ValueId>c2ca9b06-7f28-4575-b8ec-f2a4f98b6ede</xr:ValueId>
 					</xr:GeneratedType>

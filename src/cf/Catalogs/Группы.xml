@@ -138,7 +138,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.ВозрастныеГруппы</v8:Type>
+						<v8:Type>cfg:CatalogRef.ОбучающиеПрограммы</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

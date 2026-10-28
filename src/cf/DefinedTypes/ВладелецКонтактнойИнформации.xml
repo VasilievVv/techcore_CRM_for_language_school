@@ -18,7 +18,7 @@
 			<Comment/>
 			<Type>
 				<v8:Type>cfg:CatalogObject.Ученики</v8:Type>
-				<v8:Type>cfg:CatalogObject.Контрагенты</v8:Type>
+				<v8:Type>cfg:CatalogObject.Клиенты</v8:Type>
 				<v8:Type>cfg:CatalogObject.ФизическиеЛица</v8:Type>
 				<v8:Type>cfg:CatalogObject.Пользователи</v8:Type>
 			</Type>

@@ -74,11 +74,12 @@
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
-				<LabelField name="Код" id="19">
-					<DataPath>Список.Code</DataPath>
-					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
-				</LabelField>
+				<InputField name="Владелец" id="25">
+					<DataPath>Список.Owner</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="27"/>
+				</InputField>
 				<LabelField name="Ссылка" id="22">
 					<DataPath>Список.Ref</DataPath>
 					<UserVisible>

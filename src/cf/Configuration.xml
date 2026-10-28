@@ -257,7 +257,7 @@
 			<Subsystem>Администрирование</Subsystem>
 			<Subsystem>ПодключаемыеОтчетыИОбработки</Subsystem>
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
-			<Subsystem>НСИ</Subsystem>
+			<Subsystem>ЯзыковаяШкола</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВидДняПроизводственногоКалендаряПраздникЦвет</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовЦвет</StyleItem>
@@ -1536,13 +1536,14 @@
 			<Catalog>Файлы</Catalog>
 			<Catalog>ШаблоныСообщений</Catalog>
 			<Catalog>ШаблоныСообщенийПрисоединенныеФайлы</Catalog>
-			<Catalog>Контрагенты</Catalog>
+			<Catalog>Клиенты</Catalog>
 			<Catalog>Ученики</Catalog>
 			<Catalog>Направления</Catalog>
-			<Catalog>ВозрастныеГруппы</Catalog>
+			<Catalog>ОбучающиеПрограммы</Catalog>
 			<Catalog>Группы</Catalog>
 			<Catalog>ФизическиеЛица</Catalog>
 			<Catalog>Кабинеты</Catalog>
+			<Catalog>УчебныеГода</Catalog>
 			<Document>ДоговорОбучения</Document>
 			<Document>УстановкаЦен</Document>
 			<Enum>ВариантыВажностиЗадачи</Enum>
