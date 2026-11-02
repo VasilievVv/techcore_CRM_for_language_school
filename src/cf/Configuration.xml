@@ -1621,6 +1621,7 @@
 			<Report>ПросроченныеЗадачи</Report>
 			<Report>СведенияОПользователях</Report>
 			<Report>УниверсальныйОтчет</Report>
+			<Report>Должники</Report>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>ЗагрузкаДанныхИзФайла</DataProcessor>
 			<DataProcessor>ЖурналРегистрации</DataProcessor>
@@ -1731,6 +1732,7 @@
 			<InformationRegister>ЦеныОбучения</InformationRegister>
 			<InformationRegister>ЦеныСкидкиКлиентов</InformationRegister>
 			<AccumulationRegister>Платежи</AccumulationRegister>
+			<AccumulationRegister>ВзаиморасчетыСКлиентами</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ОбъектыАдресацииЗадач</ChartOfCharacteristicTypes>
 			<BusinessProcess>Задание</BusinessProcess>

@@ -27,6 +27,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыКлиента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыДоговора</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Платежи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ВзаиморасчетыСКлиентами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Должники</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
