@@ -29,10 +29,68 @@
 			<ChildItems>
 				<InputField name="Наименование" id="4">
 					<DataPath>Объект.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Иванов Иван Иванович</v8:content>
+						</v8:item>
+					</InputHint>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">НаименованиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Фамилия" id="16">
+					<DataPath>Объект.Фамилия</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Иванов</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ФамилияКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ФамилияРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="Имя" id="19">
+					<DataPath>Объект.Имя</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Иван</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ИмяКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="Отчество" id="22">
+					<DataPath>Объект.Отчество</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не обязательно</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтчествоКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ОтчествоРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="СокращенноеФИО" id="25">
+					<DataPath>Объект.СокращенноеФИО</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СокращенноеФИОКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="СокращенноеФИОРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="Статус" id="54">
+					<DataPath>Объект.Статус</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="56"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -77,6 +135,96 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<Page name="ГруппаДоговора" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Договора</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа договора</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДоговораРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<Table name="Договора" id="32">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Договора</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДоговораКонтекстноеМеню" id="33"/>
+							<AutoCommandBar name="ДоговораКоманднаяПанель" id="34"/>
+							<ExtendedTooltip name="ДоговораРасширеннаяПодсказка" id="35"/>
+							<SearchStringAddition name="ДоговораСтрокаПоиска" id="36">
+								<AdditionSource>
+									<Item>Договора</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоговораСтрокаПоискаКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="ДоговораСтрокаПоискаРасширеннаяПодсказка" id="38"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДоговораСостояниеПросмотра" id="39">
+								<AdditionSource>
+									<Item>Договора</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоговораСостояниеПросмотраКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="ДоговораСостояниеПросмотраРасширеннаяПодсказка" id="41"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДоговораУправлениеПоиском" id="42">
+								<AdditionSource>
+									<Item>Договора</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДоговораУправлениеПоискомКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="ДоговораУправлениеПоискомРасширеннаяПодсказка" id="44"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДоговораНомерСтроки" id="45">
+									<DataPath>Объект.Договора.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДоговораНомерСтрокиКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ДоговораНомерСтрокиРасширеннаяПодсказка" id="47"/>
+								</LabelField>
+								<InputField name="ДоговораДоговор" id="48">
+									<DataPath>Объект.Договора.Договор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДоговораДоговорКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ДоговораДоговорРасширеннаяПодсказка" id="50"/>
+								</InputField>
+								<InputField name="ДоговораУченик" id="51">
+									<DataPath>Объект.Договора.Ученик</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДоговораУченикКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ДоговораУченикРасширеннаяПодсказка" id="53"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

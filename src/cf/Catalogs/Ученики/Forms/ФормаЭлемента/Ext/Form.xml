@@ -45,11 +45,15 @@
 					<ChildItems>
 						<InputField name="Наименование" id="4">
 							<DataPath>Объект.Description</DataPath>
+							<DefaultItem>true</DefaultItem>
 							<EditMode>EnterOnInput</EditMode>
 							<Width>47</Width>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">НаименованиеПриИзменении</Event>
+							</Events>
 						</InputField>
 						<UsualGroup name="ГруппаВозраст" id="28">
 							<Title>
@@ -78,7 +82,7 @@
 									<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="12"/>
 								</InputField>
 								<InputField name="ВозрастнаяГруппа" id="16">
-									<DataPath>Объект.ВозрастнаяГруппа</DataPath>
+									<DataPath>1/0:2aebdb02-a50b-497c-9a72-d24a489631f4</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ВозрастнаяГруппаКонтекстноеМеню" id="17"/>
@@ -127,8 +131,58 @@
 							<ContextMenu name="СтатусКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="15"/>
 						</InputField>
+						<InputField name="Договор" id="49">
+							<DataPath>Объект.Договор</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДоговорКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="51"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дополнительные реквизиты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<InputField name="Фамилия" id="43">
+					<DataPath>Объект.Фамилия</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ФамилияКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ФамилияРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="Имя" id="37">
+					<DataPath>Объект.Имя</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="Отчество" id="40">
+					<DataPath>Объект.Отчество</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчествоКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ОтчествоРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="СокращенноеФИО" id="46">
+					<DataPath>Объект.СокращенноеФИО</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СокращенноеФИОКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="СокращенноеФИОРасширеннаяПодсказка" id="48"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаКонтактнаяИнформация" id="22">

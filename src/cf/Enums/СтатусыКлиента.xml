@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<Enum uuid="b39e07de-5ddd-4d0f-89a3-3be83ceb0598">
+	<Enum uuid="b8d95eca-94a7-4b25-aceb-8c59f05e8fae">
 		<InternalInfo>
-			<xr:GeneratedType name="EnumRef.ТипыСкидок" category="Ref">
-				<xr:TypeId>df477ef7-9231-4638-b001-bfeba64843fa</xr:TypeId>
-				<xr:ValueId>bf6a3a21-a396-40c6-80d7-4d1626e47e4f</xr:ValueId>
+			<xr:GeneratedType name="EnumRef.СтатусыКлиента" category="Ref">
+				<xr:TypeId>a20cb54c-61bc-4292-a74d-449db801b192</xr:TypeId>
+				<xr:ValueId>f7d5e3d4-7d0e-4278-b624-98b0355f2d0d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumManager.ТипыСкидок" category="Manager">
-				<xr:TypeId>83b21a51-736e-484a-a4b0-fd1f133e381f</xr:TypeId>
-				<xr:ValueId>9a707716-97ab-4884-90e0-b54061b86aa5</xr:ValueId>
+			<xr:GeneratedType name="EnumManager.СтатусыКлиента" category="Manager">
+				<xr:TypeId>65471f06-eb6f-4117-8b00-de7e5c93e2a4</xr:TypeId>
+				<xr:ValueId>7ff20ac6-feeb-4393-a046-164933b03565</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumList.ТипыСкидок" category="List">
-				<xr:TypeId>2daa8bf5-8201-470a-bb76-52237764f5a6</xr:TypeId>
-				<xr:ValueId>82a48945-50dc-43d9-aed2-093c0b8e6825</xr:ValueId>
+			<xr:GeneratedType name="EnumList.СтатусыКлиента" category="List">
+				<xr:TypeId>b82873eb-76ca-4f18-a5da-c49cf4b8b2d4</xr:TypeId>
+				<xr:ValueId>d20c4647-f422-4153-bdf0-4543b2093e2e</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ТипыСкидок</Name>
+			<Name>СтатусыКлиента</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Типы скидок</v8:content>
+					<v8:content>Статусы клиента</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -38,25 +38,37 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="0dc1831c-d2d7-42ee-8f5d-850c31fbe763">
+			<EnumValue uuid="c603c2a9-a99e-42df-bafe-e523e4393e83">
 				<Properties>
-					<Name>Процент</Name>
+					<Name>Активный</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Процент</v8:content>
+							<v8:content>Активный</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="c3fbd868-5042-4ff0-9032-cf13fd490458">
+			<EnumValue uuid="7c6d9e09-9d01-4623-a2de-e1ce7a83c21d">
 				<Properties>
-					<Name>ФиксированнаяСумма</Name>
+					<Name>Потенциальный</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Фиксированная сумма</v8:content>
+							<v8:content>Потенциальный</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1a05678a-77f1-401f-af42-2817f316e9b0">
+				<Properties>
+					<Name>Бывший</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бывший</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

@@ -18,12 +18,15 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыУченика</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыПосещения</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыСкидок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.УровниЗнанияЯзыка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПолФизическогоЛица</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДниНедели</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФормыЗанятий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныОбучения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныСкидкиКлиентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Платежи</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

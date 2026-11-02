@@ -1546,6 +1546,9 @@
 			<Catalog>УчебныеГода</Catalog>
 			<Document>ДоговорОбучения</Document>
 			<Document>УстановкаЦен</Document>
+			<Document>ПоступлениеОплаты</Document>
+			<Document>НачислениеОплаты</Document>
+			<Document>КорректировкаНачисления</Document>
 			<Enum>ВариантыВажностиЗадачи</Enum>
 			<Enum>ВариантыПредставленияПериода</Enum>
 			<Enum>ВариантыПериода</Enum>
@@ -1594,11 +1597,12 @@
 			<Enum>ЦветностиИзображения</Enum>
 			<Enum>СтатусыУченика</Enum>
 			<Enum>СтатусыПосещения</Enum>
-			<Enum>ТипыСкидок</Enum>
 			<Enum>УровниЗнанияЯзыка</Enum>
 			<Enum>ПолФизическогоЛица</Enum>
 			<Enum>ДниНедели</Enum>
 			<Enum>ФормыЗанятий</Enum>
+			<Enum>СтатусыКлиента</Enum>
+			<Enum>СтатусыДоговора</Enum>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>АнализПравДоступа</Report>
 			<Report>БизнесПроцессы</Report>
@@ -1725,6 +1729,8 @@
 			<InformationRegister>УдалитьЗамерыВремени3</InformationRegister>
 			<InformationRegister>УдалитьХранимыеФайлыВерсий</InformationRegister>
 			<InformationRegister>ЦеныОбучения</InformationRegister>
+			<InformationRegister>ЦеныСкидкиКлиентов</InformationRegister>
+			<AccumulationRegister>Платежи</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ОбъектыАдресацииЗадач</ChartOfCharacteristicTypes>
 			<BusinessProcess>Задание</BusinessProcess>
