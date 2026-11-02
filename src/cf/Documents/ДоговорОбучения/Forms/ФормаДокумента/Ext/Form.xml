@@ -22,6 +22,9 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаНомерДатаСтатус" id="37">
 			<ReadOnly>true</ReadOnly>
@@ -421,6 +424,7 @@
 				</dcsset:appearance>
 			</dcsset:item>
 			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
 				<dcsset:selection>
 					<dcsset:item>
 						<dcsset:field>ФормаПриостановить</dcsset:field>
@@ -493,6 +497,7 @@
 					<v8:content>Расторгнуть</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>Расторгнуть</Action>
 		</Command>
 	</Commands>
 </Form>
