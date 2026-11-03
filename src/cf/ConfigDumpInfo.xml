@@ -3037,7 +3037,7 @@
 		<Metadata name="CommonTemplate.ПустойМакетDOCX.Template" id="b9e93e8f-1d4b-4bbb-ac1b-c8d26cfd1da2.0" configVersion="a74c6526cc249f49b75da080182161bd00000000"/>
 		<Metadata name="CommonTemplate.СтруктураПодчиненности" id="7a62d031-c340-4b1e-90af-fff697a2e979" configVersion="38a16d63d02996488484ea461656212200000000"/>
 		<Metadata name="CommonTemplate.СтруктураПодчиненности.Template" id="7a62d031-c340-4b1e-90af-fff697a2e979.0" configVersion="171f98a8422f9a458c61384d0e01637b00000000"/>
-		<Metadata name="Configuration.CRM_Языковой_Школы" id="302127cf-cb8f-49d2-926c-e0ff21125b83" configVersion="8e12954aea96094ca140cb7e4da251b900000000"/>
+		<Metadata name="Configuration.CRM_Языковой_Школы" id="302127cf-cb8f-49d2-926c-e0ff21125b83" configVersion="c5f6702c9711c142956293c01b67efe600000000"/>
 		<Metadata name="Configuration.CRM_Языковой_Школы.ExternalConnectionModule" id="e5e9bfac-38df-4f3b-8419-b3434daa9be2.5" configVersion="1d118cc275972f43b4ce379d18dc5cb400000000"/>
 		<Metadata name="Configuration.CRM_Языковой_Школы.ManagedApplicationModule" id="e5e9bfac-38df-4f3b-8419-b3434daa9be2.6" configVersion="ff640ef9bfcad14b892624d58e8df28d00000000"/>
 		<Metadata name="Configuration.CRM_Языковой_Школы.OrdinaryApplicationModule" id="e5e9bfac-38df-4f3b-8419-b3434daa9be2.0" configVersion="b4f5398d424bbb4d9342ffcc3636b51a00000000"/>
@@ -3897,7 +3897,7 @@
 		<Metadata name="Document.ДоговорОбучения.Form.ФормаДокумента" id="45ecffe5-9fe0-4302-8684-9de65d861d43" configVersion="b56474ab6af9d740b2118cdc0981405200000000"/>
 		<Metadata name="Document.ДоговорОбучения.Form.ФормаДокумента.Form" id="45ecffe5-9fe0-4302-8684-9de65d861d43.0" configVersion="86af60315344cc42a6af7f28fddbed0600000000"/>
 		<Metadata name="Document.ДоговорОбучения.ObjectModule" id="90c55292-5fe9-43fc-b4eb-8a1fa53077a0.0" configVersion="6aab3c589658e342856e7e5c8a937e9700000000"/>
-		<Metadata name="Document.КорректировкаНачисления" id="e10aed82-2e2b-4536-adb7-922ed297a78e" configVersion="55bea925efbb704aac9510fb47de82fb00000000">
+		<Metadata name="Document.КорректировкаНачисления" id="e10aed82-2e2b-4536-adb7-922ed297a78e" configVersion="6790066be4fd9d4db4c43de6a2c07fff00000000">
 			<Metadata name="Document.КорректировкаНачисления.TabularSection.Корректировки.Attribute.ЦенаЗаЗанятие" id="1e5d987e-b5c7-47b2-8b5b-2383c3a682d6"/>
 			<Metadata name="Document.КорректировкаНачисления.TabularSection.Корректировки.Attribute.СниженоЗанятий" id="3ee69480-df58-4502-96e8-492ae4936020"/>
 			<Metadata name="Document.КорректировкаНачисления.TabularSection.Корректировки" id="53cff57e-3d43-4705-8c57-c98cefc61ed2"/>
@@ -3908,6 +3908,8 @@
 			<Metadata name="Document.КорректировкаНачисления.TabularSection.Корректировки.Attribute.Причина" id="e6e4f843-ece3-485a-a79d-f1848fa83a4a"/>
 			<Metadata name="Document.КорректировкаНачисления.TabularSection.Корректировки.Attribute.СуммаПерерасчета" id="ecb3d7be-09c7-4954-a5ef-f7395f801ef0"/>
 		</Metadata>
+		<Metadata name="Document.КорректировкаНачисления.Form.ФормаДокумента" id="fd9431d1-e592-4947-b517-e2b8a44ec778" configVersion="0028859c4def9d42beec258eda6a5ca300000000"/>
+		<Metadata name="Document.КорректировкаНачисления.Form.ФормаДокумента.Form" id="fd9431d1-e592-4947-b517-e2b8a44ec778.0" configVersion="7106cd0adaeb4c46990d4b40e60be79500000000"/>
 		<Metadata name="Document.КорректировкаНачисления.ObjectModule" id="e10aed82-2e2b-4536-adb7-922ed297a78e.0" configVersion="7303c2e4f879b448b124d96e6a1abc3700000000"/>
 		<Metadata name="Document.НачислениеОплаты" id="1ccbf746-fcff-4cf3-a81a-3e692c7bc70d" configVersion="ae78708931874b42bc1aa09f15bffd8300000000">
 			<Metadata name="Document.НачислениеОплаты.TabularSection.Начисления.Attribute.ИтогоКОплате" id="038cba83-d88e-4714-9157-8a39f5676080"/>
@@ -3924,7 +3926,7 @@
 			<Metadata name="Document.НачислениеОплаты.TabularSection.Начисления.Attribute.ЗанятийПлан" id="daaea133-672a-44e8-97f3-71e6259300f7"/>
 		</Metadata>
 		<Metadata name="Document.НачислениеОплаты.ObjectModule" id="1ccbf746-fcff-4cf3-a81a-3e692c7bc70d.0" configVersion="1fe442ad9f5af941ac8d76be4def039a00000000"/>
-		<Metadata name="Document.ПоступлениеОплаты" id="723c0fd9-fec1-4768-90a3-ec2009271fcf" configVersion="3b302b49836a7c478c71d1431b256ae400000000">
+		<Metadata name="Document.ПоступлениеОплаты" id="723c0fd9-fec1-4768-90a3-ec2009271fcf" configVersion="680e583e419fb941ab5eb66a4b8f3ac500000000">
 			<Metadata name="Document.ПоступлениеОплаты.TabularSection.Платежи.Attribute.Клиент" id="10862031-8082-4284-86c5-9e7c2405e02f"/>
 			<Metadata name="Document.ПоступлениеОплаты.TabularSection.Платежи.Attribute.Ученик" id="5c33f612-a373-49b5-9b55-b71c01e27aca"/>
 			<Metadata name="Document.ПоступлениеОплаты.TabularSection.Платежи" id="6842f6d9-adcf-4499-a6cb-774da2f4043e"/>
@@ -3932,8 +3934,10 @@
 			<Metadata name="Document.ПоступлениеОплаты.TabularSection.Платежи.Attribute.СуммаПлатежа" id="d4b5bb0d-89e6-487c-bf66-a90112f3b6de"/>
 			<Metadata name="Document.ПоступлениеОплаты.TabularSection.Платежи.Attribute.Договор" id="e3f63ace-6ee0-4278-b5e8-2750b06450fb"/>
 		</Metadata>
-		<Metadata name="Document.ПоступлениеОплаты.Form.ФормаДокумента" id="2b026673-fc03-4e26-b7a6-7312a20500df" configVersion="2424f25643d79b4fa4fcf07bd8731ff500000000"/>
-		<Metadata name="Document.ПоступлениеОплаты.Form.ФормаДокумента.Form" id="2b026673-fc03-4e26-b7a6-7312a20500df.0" configVersion="562f0d36cd493c42886a86665315a52200000000"/>
+		<Metadata name="Document.ПоступлениеОплаты.Form.ФормаДокумента" id="2b026673-fc03-4e26-b7a6-7312a20500df" configVersion="f7582549da9b424d8012947159c80b3700000000"/>
+		<Metadata name="Document.ПоступлениеОплаты.Form.ФормаДокумента.Form" id="2b026673-fc03-4e26-b7a6-7312a20500df.0" configVersion="705f0cad8e3d794da304179a00fc7bce00000000"/>
+		<Metadata name="Document.ПоступлениеОплаты.Form.ФормаСписка" id="35862a3b-a996-46d5-bf4a-bbdf19b3d578" configVersion="db6db84991dae64fb45c5deb487e8a7200000000"/>
+		<Metadata name="Document.ПоступлениеОплаты.Form.ФормаСписка.Form" id="35862a3b-a996-46d5-bf4a-bbdf19b3d578.0" configVersion="4d6cd0d012168043b42cc3026a43238200000000"/>
 		<Metadata name="Document.ПоступлениеОплаты.ObjectModule" id="723c0fd9-fec1-4768-90a3-ec2009271fcf.0" configVersion="10d2376801d04a458fa3b3e3fe91d70400000000"/>
 		<Metadata name="Document.УстановкаЦен" id="cea0f719-77ff-475a-846c-ec5b55a6a457" configVersion="20d84ced9159094e81c37fd22ba43f4500000000">
 			<Metadata name="Document.УстановкаЦен.Attribute.УчебныйГод" id="3beb1edb-ec3b-42b4-888e-b16ee87eb6f2"/>
@@ -4048,6 +4052,11 @@
 			<Metadata name="Enum.ПорядокОбработчиковОбновления.EnumValue.Критичный" id="1255dbc8-29fc-4cd1-a2ed-a97c626dea5c"/>
 			<Metadata name="Enum.ПорядокОбработчиковОбновления.EnumValue.Некритичный" id="6b297ab7-7ff9-45a7-9075-ca3a1878cb2b"/>
 			<Metadata name="Enum.ПорядокОбработчиковОбновления.EnumValue.Обычный" id="ee538127-bfa3-487a-9595-e69968595113"/>
+		</Metadata>
+		<Metadata name="Enum.ПричиныПерерасчета" id="c102c34a-9fda-459d-aed3-28c0cb9238c6" configVersion="3f9313636eba0c428c8c49a30390358c00000000">
+			<Metadata name="Enum.ПричиныПерерасчета.EnumValue.Справка" id="437aa277-a9aa-4260-a0c5-b3d638a9c732"/>
+			<Metadata name="Enum.ПричиныПерерасчета.EnumValue.Другое" id="bc276e4c-5411-4274-b39f-0be18dfade4a"/>
+			<Metadata name="Enum.ПричиныПерерасчета.EnumValue.БолезньУчителя" id="bcb4bec3-b9c3-40af-9d08-40c10ed2b59c"/>
 		</Metadata>
 		<Metadata name="Enum.ПровайдерыSMS" id="3807f865-dd2c-44f7-9238-3db191f0a186" configVersion="4e64b4b9fbab7f4b9b8ce8c118ca257100000000">
 			<Metadata name="Enum.ПровайдерыSMS.EnumValue.СМСУслуги" id="22474ca3-565b-4b67-a5b4-b0b959306d10"/>
@@ -5812,7 +5821,7 @@
 		<Metadata name="Subsystem.СтандартныеПодсистемы.Subsystem.УправлениеИтогамиИАгрегатами" id="6d39c6df-8cd4-47ad-9125-252b37d94575" configVersion="80fd8eac783cc741a35af6a00feffca800000000"/>
 		<Metadata name="Subsystem.СтандартныеПодсистемы.Subsystem.УправлениеИтогамиИАгрегатами.Help" id="6d39c6df-8cd4-47ad-9125-252b37d94575.0" configVersion="31ae051aa05bcb499df6ec60784e483e00000000"/>
 		<Metadata name="Subsystem.СтандартныеПодсистемы.Subsystem.ШаблоныСообщений" id="98b67b5a-3550-4a64-9e07-07fcc9154c73" configVersion="0e018fb23cbd4d47bf5057a1c95ab56100000000"/>
-		<Metadata name="Subsystem.ЯзыковаяШкола" id="d6338f7c-b598-41cf-8202-9bc9d20056a1" configVersion="c8743f591d469c408b3af0fdc88493a200000000"/>
+		<Metadata name="Subsystem.ЯзыковаяШкола" id="d6338f7c-b598-41cf-8202-9bc9d20056a1" configVersion="74d42009cefbda44a0856d885e7ac06c00000000"/>
 		<Metadata name="Subsystem.ЯзыковаяШкола.Subsystem.Документы" id="8b4dae55-a04e-4308-a623-0942e750509c" configVersion="34f2ac76e690d34da1f9bdba4b8c93d300000000"/>
 		<Metadata name="Subsystem.ЯзыковаяШкола.Subsystem.Справочники" id="73bb9d58-52e8-4370-aeb7-4cfbdc222cd6" configVersion="83f268ab456c9d459a15b202ee886cbd00000000"/>
 		<Metadata name="Task.ЗадачаИсполнителя" id="3ad08f4a-6202-4099-b6cc-bc116e6731a0" configVersion="8a187df7390b5442bb63fc4129e2fbb300000000">

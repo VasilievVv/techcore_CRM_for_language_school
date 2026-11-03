@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНомерДата" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=DD</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ПериодКорректировки" id="7">
+			<DataPath>Объект.ПериодКорректировки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>30</Width>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<EditFormat>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ДФ='ММММ гггг'</v8:content>
+				</v8:item>
+			</EditFormat>
+			<ContextMenu name="ПериодКорректировкиКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПериодКорректировкиРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="Корректировки" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Корректировки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="КорректировкиКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="КорректировкиКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="КорректировкиРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="КорректировкиСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Корректировки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КорректировкиСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="КорректировкиСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КорректировкиСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Корректировки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КорректировкиСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="КорректировкиСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КорректировкиУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Корректировки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КорректировкиУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="КорректировкиУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="КорректировкиНомерСтроки" id="23">
+					<DataPath>Объект.Корректировки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КорректировкиНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="КорректировкиНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="КорректировкиУченик" id="32">
+					<DataPath>Объект.Корректировки.Ученик</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КорректировкиУченикКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="КорректировкиУченикРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">КорректировкиУченикПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КорректировкиКлиент" id="29">
+					<DataPath>Объект.Корректировки.Клиент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КорректировкиКлиентКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КорректировкиКлиентРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="КорректировкиДоговор" id="26">
+					<DataPath>Объект.Корректировки.Договор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КорректировкиДоговорКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КорректировкиДоговорРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="КорректировкиЦенаЗаЗанятие" id="35">
+					<DataPath>Объект.Корректировки.ЦенаЗаЗанятие</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КорректировкиЦенаЗаЗанятиеКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="КорректировкиЦенаЗаЗанятиеРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">КорректировкиЦенаЗаЗанятиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КорректировкиСниженоЗанятий" id="38">
+					<DataPath>Объект.Корректировки.СниженоЗанятий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КорректировкиСниженоЗанятийКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="КорректировкиСниженоЗанятийРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="OnChange">КорректировкиСниженоЗанятийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КорректировкиСуммаПерерасчета" id="41">
+					<DataPath>Объект.Корректировки.СуммаПерерасчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КорректировкиСуммаПерерасчетаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="КорректировкиСуммаПерерасчетаРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="КорректировкиПричина" id="44">
+					<DataPath>Объект.Корректировки.Причина</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КорректировкиПричинаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="КорректировкиПричинаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.КорректировкаНачисления</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
