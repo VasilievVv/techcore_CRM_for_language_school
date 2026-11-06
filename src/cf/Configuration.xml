@@ -1136,6 +1136,7 @@
 			<CommonModule>ШаблоныСообщенийСлужебный</CommonModule>
 			<CommonModule>ШаблоныСообщенийСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыCRM</CommonModule>
+			<CommonModule>РасчетЗанятийСервер</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApdexExport</XDTOPackage>
 			<XDTOPackage>ApdexExport_1_0_0_3</XDTOPackage>

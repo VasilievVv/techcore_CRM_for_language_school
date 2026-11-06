@@ -149,13 +149,46 @@
 							<ContextMenu name="НаправлениеКонтекстноеМеню" id="17"/>
 							<ExtendedTooltip name="НаправлениеРасширеннаяПодсказка" id="18"/>
 						</InputField>
-						<InputField name="ДатаНачала" id="19">
-							<DataPath>Объект.ДатаНачала</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="20"/>
-							<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="21"/>
-						</InputField>
+						<UsualGroup name="ГруппаДаты" id="126">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа даты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа даты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="127"/>
+							<ChildItems>
+								<InputField name="ДатаНачала" id="19">
+									<DataPath>Объект.ДатаНачала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="21"/>
+									<Events>
+										<Event name="OnChange">ДатаНачалаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ДатаОкончания" id="22">
+									<DataPath>Объект.ДатаОкончания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="24"/>
+									<Events>
+										<Event name="OnChange">ДатаОкончанияПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаРасписаниеПраво" id="45">
@@ -176,22 +209,24 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаРасписаниеПравоРасширеннаяПодсказка" id="46"/>
 					<ChildItems>
-						<InputField name="Группа" id="13">
-							<DataPath>Объект.Группа</DataPath>
+						<InputField name="Программа" id="13">
+							<DataPath>Объект.Программа</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ГруппаКонтекстноеМеню" id="14"/>
-							<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="15"/>
+							<ContextMenu name="ПрограммаКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ПрограммаРасширеннаяПодсказка" id="15"/>
 							<Events>
-								<Event name="OnChange">ГруппаПриИзменении</Event>
+								<Event name="OnChange">ПрограммаПриИзменении</Event>
 							</Events>
 						</InputField>
-						<InputField name="ДатаОкончания" id="22">
-							<DataPath>Объект.ДатаОкончания</DataPath>
-							<EditMode>EnterOnInput</EditMode>
+						<InputField name="ФормаЗанятий" id="128">
+							<DataPath>Объект.ФормаЗанятий</DataPath>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="23"/>
-							<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="24"/>
+							<ContextMenu name="ФормаЗанятийКонтекстноеМеню" id="129"/>
+							<ExtendedTooltip name="ФормаЗанятийРасширеннаяПодсказка" id="130"/>
+							<Events>
+								<Event name="OnChange">ФормаЗанятийПриИзменении</Event>
+							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -270,6 +305,12 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="КоличествоАкадемическихЧасов" id="131">
+			<DataPath>Объект.КоличествоАкадемическихЧасов</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КоличествоАкадемическихЧасовКонтекстноеМеню" id="132"/>
+			<ExtendedTooltip name="КоличествоАкадемическихЧасовРасширеннаяПодсказка" id="133"/>
+		</InputField>
 		<InputField name="Комментарий" id="34">
 			<DataPath>Объект.Комментарий</DataPath>
 			<EditMode>EnterOnInput</EditMode>
@@ -313,6 +354,190 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<Pages name="ДопонительнаяИнформация" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Допонительная информация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Допонительная информация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ДопонительнаяИнформацияРасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<Page name="ГруппаГрафикОказанияУслуг" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа график оказания услуг</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа график оказания услуг</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаГрафикОказанияУслугРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<Table name="ГрафикОказанияУслуг" id="71">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ГрафикОказанияУслуг</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ГрафикОказанияУслугКонтекстноеМеню" id="72"/>
+							<AutoCommandBar name="ГрафикОказанияУслугКоманднаяПанель" id="73"/>
+							<ExtendedTooltip name="ГрафикОказанияУслугРасширеннаяПодсказка" id="74"/>
+							<SearchStringAddition name="ГрафикОказанияУслугСтрокаПоиска" id="75">
+								<AdditionSource>
+									<Item>ГрафикОказанияУслуг</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГрафикОказанияУслугСтрокаПоискаКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="ГрафикОказанияУслугСтрокаПоискаРасширеннаяПодсказка" id="77"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ГрафикОказанияУслугСостояниеПросмотра" id="78">
+								<AdditionSource>
+									<Item>ГрафикОказанияУслуг</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГрафикОказанияУслугСостояниеПросмотраКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="ГрафикОказанияУслугСостояниеПросмотраРасширеннаяПодсказка" id="80"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ГрафикОказанияУслугУправлениеПоиском" id="81">
+								<AdditionSource>
+									<Item>ГрафикОказанияУслуг</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ГрафикОказанияУслугУправлениеПоискомКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="ГрафикОказанияУслугУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ГрафикОказанияУслугНомерСтроки" id="84">
+									<DataPath>Объект.ГрафикОказанияУслуг.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ГрафикОказанияУслугНомерСтрокиКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ГрафикОказанияУслугНомерСтрокиРасширеннаяПодсказка" id="86"/>
+								</LabelField>
+								<InputField name="ГрафикОказанияУслугДниНедели" id="87">
+									<DataPath>Объект.ГрафикОказанияУслуг.ДеньНедели</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ГрафикОказанияУслугДниНеделиКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ГрафикОказанияУслугДниНеделиРасширеннаяПодсказка" id="89"/>
+								</InputField>
+								<InputField name="ГрафикОказанияУслугГруппа" id="90">
+									<DataPath>Объект.ГрафикОказанияУслуг.Группа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ГрафикОказанияУслугГруппаКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ГрафикОказанияУслугГруппаРасширеннаяПодсказка" id="92"/>
+								</InputField>
+								<InputField name="ГрафикОказанияУслугВремяНачалаЗанятия" id="93">
+									<DataPath>Объект.ГрафикОказанияУслуг.ВремяНачалаЗанятия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ГрафикОказанияУслугВремяНачалаЗанятияКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ГрафикОказанияУслугВремяНачалаЗанятияРасширеннаяПодсказка" id="95"/>
+								</InputField>
+								<InputField name="ГрафикОказанияУслугВремяОкончанияЗанятия" id="96">
+									<DataPath>Объект.ГрафикОказанияУслуг.ВремяОкончанияЗанятия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ГрафикОказанияУслугВремяОкончанияЗанятияКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ГрафикОказанияУслугВремяОкончанияЗанятияРасширеннаяПодсказка" id="98"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ПроистановкаЗанятий" id="99">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проистановка занятий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проистановка занятий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПроистановкаЗанятийРасширеннаяПодсказка" id="100"/>
+					<ChildItems>
+						<Table name="ПриостановленияЗанятий" id="101">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПриостановленияЗанятий</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПриостановленияЗанятийКонтекстноеМеню" id="102"/>
+							<AutoCommandBar name="ПриостановленияЗанятийКоманднаяПанель" id="103"/>
+							<ExtendedTooltip name="ПриостановленияЗанятийРасширеннаяПодсказка" id="104"/>
+							<SearchStringAddition name="ПриостановленияЗанятийСтрокаПоиска" id="105">
+								<AdditionSource>
+									<Item>ПриостановленияЗанятий</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПриостановленияЗанятийСтрокаПоискаКонтекстноеМеню" id="106"/>
+								<ExtendedTooltip name="ПриостановленияЗанятийСтрокаПоискаРасширеннаяПодсказка" id="107"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПриостановленияЗанятийСостояниеПросмотра" id="108">
+								<AdditionSource>
+									<Item>ПриостановленияЗанятий</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПриостановленияЗанятийСостояниеПросмотраКонтекстноеМеню" id="109"/>
+								<ExtendedTooltip name="ПриостановленияЗанятийСостояниеПросмотраРасширеннаяПодсказка" id="110"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПриостановленияЗанятийУправлениеПоиском" id="111">
+								<AdditionSource>
+									<Item>ПриостановленияЗанятий</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПриостановленияЗанятийУправлениеПоискомКонтекстноеМеню" id="112"/>
+								<ExtendedTooltip name="ПриостановленияЗанятийУправлениеПоискомРасширеннаяПодсказка" id="113"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПриостановленияЗанятийНомерСтроки" id="114">
+									<DataPath>Объект.ПриостановленияЗанятий.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриостановленияЗанятийНомерСтрокиКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="ПриостановленияЗанятийНомерСтрокиРасширеннаяПодсказка" id="116"/>
+								</LabelField>
+								<InputField name="ПриостановленияЗанятийДатаНачала" id="117">
+									<DataPath>Объект.ПриостановленияЗанятий.ДатаНачала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПриостановленияЗанятийДатаНачалаКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ПриостановленияЗанятийДатаНачалаРасширеннаяПодсказка" id="119"/>
+								</InputField>
+								<InputField name="ПриостановленияЗанятийДатаОкончания" id="120">
+									<DataPath>Объект.ПриостановленияЗанятий.ДатаОкончания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПриостановленияЗанятийДатаОкончанияКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="ПриостановленияЗанятийДатаОкончанияРасширеннаяПодсказка" id="122"/>
+								</InputField>
+								<InputField name="ПриостановленияЗанятийПричина" id="123">
+									<DataPath>Объект.ПриостановленияЗанятий.Причина</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПриостановленияЗанятийПричинаКонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="ПриостановленияЗанятийПричинаРасширеннаяПодсказка" id="125"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
